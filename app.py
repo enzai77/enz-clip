@@ -356,4 +356,4 @@ def download_ranking(video_id):
 if __name__ == '__main__':
     print("ENZ Clip Backend v5 - Ranking Video Generator!")
     print("Running on http://localhost:5000")
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
